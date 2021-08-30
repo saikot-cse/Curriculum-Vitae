@@ -1,0 +1,203 @@
+/* Default Part  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/* HTML Tags Style  */
+body{
+    background-color: rgba(0, 255, 255, 0.212);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+/* CV Body Style  */
+.cv_main{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    margin: 50px;
+    background: #fff;
+    display: grid;
+    grid-template-columns: 1.3fr 2fr;
+    box-shadow: 0px 35px 55px rgba(0, 0, 0, 0.1);
+}
+
+/* CV Left Profile Style  */
+.cv_main .left-profile{
+    position: relative;
+    background-color: #4A5A8D;
+    padding: 40px;
+}
+.profile-information{
+    position: relative;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.profile-information .profile-pic{
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+.profile-information .profile-pic img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.profile-information h2{
+    color: #fff;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 500;
+    line-height: 1.4rem;
+}
+.profile-information h2 span{
+    font-size: 1rem;
+    font-weight: 400;
+}
+/* Contact Information Style  */
+.contact-info{
+    padding-top: 40px;
+}
+.title{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.contact-info ul{
+    position: relative;
+}
+.contact-info ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.contact-info ul li .icon{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #03a9f4;
+}
+.contact-info ul li .text{
+    color: #fff;
+    font-weight: 300;
+}
+
+/* Language Information Style  */
+.contact-info.language .percent{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background-color: #081921;
+    display: block;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+.contact-info.language .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #03a9f4;
+    border-radius: 10px;
+}
+/* Interest Information style */
+.interest ul{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 70px;
+}
+.contact-info.interest ul li{
+    color: #fff;
+    font-weight: 500;
+    margin: 10px 0;
+}
+.contact-info.interest ul li .fas{
+    color: #03a9f4;
+    font-size: 18px;
+}
+
+/* CV Right Profile Style  */
+.cv_main .right-profile{
+    position: relative;
+    background-color: #fff;
+    padding: 40px;
+    overflow: hidden;
+}
+.about{
+    margin-bottom: 50px;
+
+}
+.about:last-child{
+    margin-bottom: 0;
+}
+.title2{
+    color: #4A5A8D;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+.about-text{
+    color: #333
+}
+/* Education Information Style  */
+.about .box{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+.about .box .year-graduation{
+    min-width: 150px;
+}
+.about .box .year-graduation h5{
+    text-transform: uppercase;
+    color: #848c90;
+    font-weight: 600;
+}
+.about .box .text h4{
+    color: #03a9f4;
+    font-size: 16px;
+}
+.about .box .text h5.gpa{
+    color: #3d5b6b;
+    font-size: 12px;
+}
+/* Skill Information style */
+.about.skills ul li{
+    position: relative;
+    list-style: none;
+    margin: 20px 0;
+}
+.about.skills .percent{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background-color: #081921;
+    display: block;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+
+.about.skills .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #03a9f4;
+    border-radius: 10px;
+}
